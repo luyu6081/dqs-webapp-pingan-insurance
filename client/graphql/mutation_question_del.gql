@@ -1,0 +1,4 @@
+# 删除问题分类
+mutation dqsRemoveTemplateType ($id: ID!) {
+  data: dqsRemoveTemplateType (id: $id)
+}

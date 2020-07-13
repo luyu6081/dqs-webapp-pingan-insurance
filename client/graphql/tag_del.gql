@@ -1,0 +1,3 @@
+mutation dqsUserUnPasteTag ($scheduleId: ID!, $tagId: ID!) {
+  data: dqsUserUnPasteTag(scheduleId: $scheduleId, tagId: $tagId)
+}

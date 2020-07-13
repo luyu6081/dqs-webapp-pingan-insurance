@@ -1,0 +1,9 @@
+# 获取工单评分标准
+query dqsLoadIssueScore{
+  data: dqsLoadIssueScore {
+    #  数量
+    number
+    #  得分
+    score
+  }
+}

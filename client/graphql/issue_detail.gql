@@ -1,0 +1,86 @@
+#import "./fragment_target.gql"
+query issueDetail ($id: String!) {
+  data: dqsLoadIssueDetail(id: $id) {
+     # UUID
+     id
+     # 标题
+     title
+     # 节点名称
+     name
+     # 工单节点
+     issueNode
+     # 工单级别 枚举
+     urgency
+     # 描述
+     desc
+     # 是否是当前操作人
+     isCurTransact
+     # 解决时间
+     resolutionTime
+     # 相关任务
+     executions{
+       id
+       # EsSchedule id
+       # scheduleId
+       # 检查规则名称
+       name
+       # 检查对象
+       target {
+          ...DqsTarget
+       }
+       # 检查得分
+       rc
+       # 技术负责人
+       techLinkman {
+         name
+       }
+       # 业务负责人
+       busiLinkman{
+         name
+       }
+       # 检查任务完成时间
+       taskRunTm
+      }
+     # 操作流程
+     timeline {
+        # 节点名称
+        name
+        # 工单操作情况 DqsIssueOperateEnum! 枚举
+        operation
+        # 操作状态
+        handleStateEnum
+        # 操作人
+        transact{
+           name
+           avatar
+        }
+        # 任务开始时间
+        startDate
+        # 任务完成时间
+        endDate
+        # 持续时间
+        durationInMillis
+        # 审批意见
+        opinion
+#        files {
+#          ...AmbryBlobDetail
+#        }
+     }
+     # 创建时间
+     createdAt
+     # 创建者
+     createdBy{
+       name
+     }
+     # 解决人
+     resolveBy{
+       name
+     }
+     # 周期
+     period
+     # 工单状态  WfTaskState枚举
+     state
+     # 发生时间
+     dateTime
+  }
+}

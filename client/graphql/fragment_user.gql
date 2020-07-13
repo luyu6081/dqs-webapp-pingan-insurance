@@ -1,0 +1,22 @@
+# 模型
+fragment User on User {
+  id
+  # 名字
+  name
+  # 手机号
+  phone
+  # 固话
+  telephone
+  # 邮箱
+  email
+  # 地址
+  address
+  # 头像
+  avatar
+  # 职位
+  position
+  # 工号
+  jobNumber
+  # 部门
+  depts
+}

@@ -1,0 +1,15 @@
+# 获取模板列表
+#import "./fragment_template.gql"
+query dqsLoadTemplateList ($input: DqsLoadTemplateListInput) {
+  data: dqsLoadTemplateList (input: $input) {
+    total
+    # 取数偏移
+    offset
+    # 取数范围
+    limit
+    # 数据内容
+    data {
+      ...DqsTemplate
+    }
+  }
+}

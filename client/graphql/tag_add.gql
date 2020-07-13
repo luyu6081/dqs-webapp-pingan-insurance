@@ -1,0 +1,6 @@
+#import "./fragment_tag_detail.gql"
+mutation tagAdd ($input: DqsTagInput!) {
+  data: dqsAddTag(input: $input) {
+    ...TagInfoResult
+  }
+}

@@ -1,0 +1,19 @@
+# 获取质量平台得分
+fragment DqsPlatformScore on DqsPlatformScore {
+   id
+   # 元数据 id
+   objectId
+   #name
+   name
+   # 评分时间
+   dateTime
+   # 得分
+   score
+   # 错误得分
+   errorScore
+   #工单得分
+   issueScore
+   platformScores {
+     ...DqsPlatformScore
+   }
+}

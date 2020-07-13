@@ -1,0 +1,19 @@
+# 获取平台得分历史
+query dqsPlatformScoreHistory ($id: ID){
+  data: dqsPlatformScoreHistory (id: $id) {
+    # 评分时间
+     marking
+     # 得分
+     score
+     # 评分时间
+     dateTime
+     # 错误得分
+     errorScore
+     # 错误率
+     errorRate
+     # 工单分
+     issueScore
+     # 工单数量
+     issueNumber
+  }
+}

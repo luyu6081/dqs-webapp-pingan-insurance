@@ -1,0 +1,7 @@
+query heatmapList ($input: DqsExecutionHeatMapInput!)  {
+  data: dqsLoadCheckRuleHeatMap (input: $input) {
+     id
+     date
+     rc
+  }
+}

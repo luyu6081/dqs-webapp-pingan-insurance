@@ -1,0 +1,8 @@
+query resultInfo ($id: ID!)  {
+  data: dqsLoadExecutionDetail (id: $id) {
+     data
+     log
+     result
+     rc
+  }
+}

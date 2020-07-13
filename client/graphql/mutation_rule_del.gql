@@ -1,0 +1,4 @@
+# 检查规则删除
+mutation dqsRemoveSchedule ($id: [ID!]) {
+  data: dqsRemoveSchedule (id: $id)
+}

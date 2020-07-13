@@ -1,0 +1,8 @@
+# 获取etl列表
+query mdsLoadEtlJobList {
+  data: mdsLoadEtlJobList {
+    id
+    name
+    content
+  }
+}

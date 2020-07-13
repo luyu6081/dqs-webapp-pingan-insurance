@@ -1,0 +1,4 @@
+# 创建问题分类
+mutation dqsCreateAndUpdateTemplateType ($input: DqsCreateTemplateInput!) {
+  data: dqsCreateAndUpdateTemplateType (input: $input)
+}

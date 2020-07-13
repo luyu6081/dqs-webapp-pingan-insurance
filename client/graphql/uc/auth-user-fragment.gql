@@ -1,0 +1,9 @@
+fragment OauthUserVOFields on OauthUserVO {
+  userId
+  ### 登录账号 ###
+  username
+  ### 名称 ###
+  name
+  # 工号
+  jobNumber
+}

@@ -1,0 +1,11 @@
+# 获取错误评分标准
+query dqsLoadErrorScoresVoList{
+  data: dqsLoadErrorScoresVoList {
+    # 开始比例 四位小数
+    startProportion
+    # 结束比例
+    endProportion
+    # 等分
+    score
+  }
+}

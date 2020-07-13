@@ -1,0 +1,3 @@
+mutation editCollect ($id: ID!, $isOperations: Boolean!) {
+  data: dqsCollectSchedule(id: $id, isOperations: $isOperations)
+}

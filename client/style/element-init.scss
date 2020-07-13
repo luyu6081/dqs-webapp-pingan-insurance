@@ -1,0 +1,140 @@
+/*初始化按钮*/
+.el-button--primary {
+  @apply bg-blue border-blue;
+}
+
+//.el-button:focus, .el-button:hover{
+//  @apply text-gray-darkest bg-white;
+//  border-color: #DCDFE6;
+//}
+
+.el-button--primary:focus, .el-button--primary:hover{
+  @apply text-white;
+  outline: none;
+  background: #2f71f4;
+}
+
+/*初始化tabs*/
+.el-tabs__item.is-active, .el-tabs__item:hover{
+  @apply text-blue;
+}
+
+.el-tabs__active-bar{
+  @apply bg-blue;
+}
+
+.el-tabs__nav-wrap::after{
+  height: 1px;
+  background-color: #f4f4f4;
+}
+
+.el-tabs__active-bar{
+  @apply bg-blue;
+  height: 2px;
+}
+
+/*初始化面包屑*/
+/*.el-breadcrumb__inner a, .el-breadcrumb__inner.is-link{
+  @apply text-blue;
+}
+
+.el-breadcrumb__inner a:hover, .el-breadcrumb__inner.is-link:hover{
+  @apply text-blue;
+}*/
+.el-breadcrumb{
+  @apply flex items-center;
+  height: 50px;
+  background: rgba(71, 125, 233, .1);
+}
+
+.el-breadcrumb__inner a:hover, .el-breadcrumb__inner.is-link:hover{
+  @apply text-blue;
+}
+
+.el-breadcrumb__inner.is-link{
+  @apply text-gray-darkest;
+  font-weight: 400;
+}
+
+.el-breadcrumb__item:last-child .el-breadcrumb__inner, .el-breadcrumb__item:last-child .el-breadcrumb__inner:hover{
+  @apply text-blue;
+}
+
+
+/*初始化input*/
+.el-input.is-active .el-input__inner, .el-input__inner:focus{
+  @apply border-blue;
+}
+
+/*初始化textarea*/
+.el-textarea__inner:focus{
+  @apply border-blue;
+}
+
+/*初始化Cascader*/
+.el-cascader .el-input .el-input__inner:focus, .el-cascader .el-input.is-focus .el-input__inner{
+  @apply border-blue;
+}
+.el-cascader-node.in-active-path, .el-cascader-node.is-active, .el-cascader-node.is-selectable.in-checked-path{
+  @apply text-blue;
+}
+
+/*初始化select*/
+.el-select .el-input.is-focus .el-input__inner{
+  @apply border-blue;
+}
+.el-select .el-input__inner:focus{
+  @apply border-blue;
+}
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected, .el-select-dropdown__item.selected{
+  @apply text-blue;
+}
+
+/*初始化radio*/
+.el-radio__input.is-checked .el-radio__inner{
+  @apply border-blue bg-blue;
+}
+.el-radio__input.is-checked+.el-radio__label{
+  @apply text-blue;
+}
+.el-radio__inner:hover{
+  @apply border-blue;
+}
+
+/*初始化checkbox*/
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  @apply border-blue bg-blue;
+}
+
+.el-link.el-link--primary{
+  @apply text-blue;
+  &:hover{
+    @apply text-blue;
+  }
+}
+
+/*分页*/
+.el-pagination{
+  font-weight: 400;
+}
+
+/*steps*/
+.el-step__head.is-finish .el-step__line-inner{
+  border: none;
+  border-top: 1px solid theme('colors.blue.default');
+}
+
+/**/
+.el-range-editor.is-active, .el-range-editor.is-active:hover{
+  @apply border-blue;
+}
+
+/**/
+.el-checkbox__inner:hover{
+  @apply border-blue;
+}
+
+/*初始化checkbox*/
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  @apply text-blue;
+}

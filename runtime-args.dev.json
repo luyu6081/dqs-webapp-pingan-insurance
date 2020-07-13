@@ -1,0 +1,8 @@
+{
+  "NUXT_ENV_MAIN_ENDPOINT_HTTP": "http://mds-all-frontier.dev.jinxin.cloud/graphql",
+  "NUXT_ENV_AUTH_HTTP_ENDPOINT": "http://auth-frontier.dev.jinxin.cloud/graphql",
+  "NUXT_ENV_UC_HTTP_LOGIN": "http://login.dev.jinxin.cloud/",
+  "NUXT_ENV_MDS_HTTP": "http://mds.dev.jinxin.cloud",
+  "NUXT_ENV_KC_HTTP": "http://kc.dev.jinxin.cloud",
+  "NUXT_ENV_ALL_HTTP": "http://mds-all-frontier.dev.jinxin.cloud"
+}

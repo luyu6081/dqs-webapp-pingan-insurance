@@ -1,0 +1,30 @@
+
+fragment DqsTemplate on DqsTemplate{
+  # UUID
+  id
+  # 名称
+  name
+  # 脚本内容
+  script
+  #质量问题分类
+  qualityProblems
+  # 业务技术分类
+  classifyEnum
+  # 脚本参数定义
+  params {
+    name
+    description
+  }
+  resultFields {
+    result
+    description
+  }
+  # 结果集多选单选
+  resultSet
+  checkTypeDesc
+  tasksNumber
+  createdBy {
+    name
+  }
+  createTm
+}

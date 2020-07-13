@@ -1,0 +1,25 @@
+#import "./fragment_target.gql"
+query executionList ($input: DqsExecutionLitInput) {
+  data: dqsLoadExecutionList(input: $input) {
+     offset
+      limit
+      total
+      data {
+        id
+        scheduleId
+        name
+        rc
+        # 检查任务完成时间
+        taskRunTm
+        techLinkman{
+          name
+        }
+        busiLinkman{
+          name
+        }
+        target{
+           ...DqsTarget
+        }
+      }
+  }
+}

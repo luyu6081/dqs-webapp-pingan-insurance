@@ -1,0 +1,37 @@
+#import "./fragment_target.gql"
+query dataList ($input: DqsLoadScheduleListInput!)  {
+  data: dqsLoadScheduleList (input: $input) {
+    offset
+    limit
+    total
+    data {
+      id
+      name
+      tags {
+        id
+        ### tag名称 ###
+        tagName
+        ### 租户Id ###
+        tenantId
+        ### 该标签引用在表中数量 ###
+        useCount
+        ### 点赞数 ###
+        praiseCount
+      }
+      target{
+         ...DqsTarget
+      }
+      techLinkman {
+        name
+      }
+      busiLinkman {
+        name
+      }
+      modifyTm
+      starred
+      subscribed
+      runningState
+      rc
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# 用户等录
+query getUserinfo {
+  data: getLoginUser {
+    userId
+    name
+    avatar: userAvatar
+    permissionCodes
+    tenantName
+  }
+}

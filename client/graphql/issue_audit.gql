@@ -1,0 +1,3 @@
+mutation dqsCompleteIssue ($input: DqsCompleteInput!) {
+  data: dqsCompleteIssue(input: $input)
+}

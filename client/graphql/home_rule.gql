@@ -1,0 +1,42 @@
+#import "./fragment_target.gql"
+query dqlRelated {
+  data: dqsLoadRelated {
+    issue {
+      id
+      title
+      state
+      createdAt
+      createdBy{
+        name
+      }
+    }
+    ruleSubscribe {
+      id
+      name
+      rc
+      target{
+        ...DqsTarget
+      }
+      taskRunTime
+    }
+    ruleLike {
+      id
+      name
+      rc
+      target{
+        ...DqsTarget
+      }
+      taskRunTime
+    }
+    ruleLook {
+      id
+      name
+      rc
+      target{
+        ...DqsTarget
+      }
+      taskRunTime
+    }
+  }
+}
+

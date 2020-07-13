@@ -1,0 +1,56 @@
+#import "./fragment_user.gql"
+#import "./fragment_tag_detail.gql"
+#import "./fragment_target.gql"
+#import "./fragment_template.gql"
+query detailInfo ($id: ID!)  {
+  data: dqsLoadScheduleDetail (id: $id) {
+    id
+    name
+    desc
+    starred
+    subscribed
+    techLinkman {
+       ...User
+    }
+    busiLinkman {
+      ...User
+    }
+    modifyTm
+
+    target {
+      ...DqsTarget
+    }
+
+    tags {
+      ...TagInfoResult
+    }
+
+#    templateParams
+    checkTypeId
+    resultTemporaryDay
+#    resultTemporaryNumber
+    rc
+    checkResultTemporaryTable
+    etlJobName
+    executeStageId
+#    contentSql
+    workFlowTotal
+#    模板详情
+    template {
+      ...DqsTemplate
+    }
+    scheduleHistory {
+      createTm
+      changesThat
+    }
+    etlJobId
+    runningState
+    interval
+    location
+    setting
+    # 邮件
+    noticeEmail
+    # 短信
+    noticePhone
+  }
+}

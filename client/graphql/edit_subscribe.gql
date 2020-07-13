@@ -1,0 +1,3 @@
+mutation editSubscribe ($id: ID!, , $isOperations: Boolean!) {
+  data: dqsSubscribeSchedule(id: $id, isOperations: $isOperations)
+}

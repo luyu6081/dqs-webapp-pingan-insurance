@@ -1,0 +1,16 @@
+query dqsLoadIssueOverview {
+  data: dqsLoadIssueOverview {
+    # 我的待办
+    wait: todo
+    # 进行中
+    starting: open
+    # 已完成
+    closed
+    # 超时工单
+    overdue
+    # 与我相关
+    related
+    # 全部工单
+    all
+  }
+}

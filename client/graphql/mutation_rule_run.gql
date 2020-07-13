@@ -1,0 +1,4 @@
+# 检查规则启动暂停
+mutation dqsPerformOrClosedSchedule ($id: [ID!], $state: Boolean) {
+  data: dqsPerformOrClosedSchedule (id: $id, state: $state)
+}

@@ -1,0 +1,3 @@
+mutation edit_issue ($input: DqsCompleteInput) {
+  data: dqsCompleteIssue (input: $input)
+}

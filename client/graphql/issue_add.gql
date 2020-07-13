@@ -1,0 +1,3 @@
+mutation issueAdd ($input: DqsCreateIssueInput!) {
+  data: dqsCreateIssue(input: $input)
+}

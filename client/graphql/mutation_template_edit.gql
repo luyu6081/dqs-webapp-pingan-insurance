@@ -1,0 +1,4 @@
+# 创建+编辑模板
+mutation dqsCreateAndUpdateTemplate ($input: DqsCreateAndUpdateTemplateInput!) {
+  data: dqsCreateAndUpdateTemplate (input: $input)
+}

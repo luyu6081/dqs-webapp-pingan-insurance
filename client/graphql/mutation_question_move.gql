@@ -1,0 +1,4 @@
+# 删除问题分类 移动位置
+mutation dqsMoveTemplateType ($startId: ID!, $endId: ID!) {
+  data: dqsMoveTemplateType (startId: $startId, endId: $endId)
+}

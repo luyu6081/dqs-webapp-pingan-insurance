@@ -1,0 +1,4 @@
+# 创建或修改工单评分标准
+mutation dqsCreateScoreManage ($input: DqsScoreManageInput){
+  data: dqsCreateScoreManage (input: $input)
+}

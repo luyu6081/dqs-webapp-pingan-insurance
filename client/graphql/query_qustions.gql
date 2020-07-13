@@ -1,0 +1,13 @@
+# 获取问题分类列表
+query dqsLoadTemplateTypeList {
+  data: dqsLoadTemplateTypeList {
+    # id
+    id
+    # 问题分类名
+    name
+    # 描述
+    description
+    # 排序序号
+    orderNumber
+  }
+}

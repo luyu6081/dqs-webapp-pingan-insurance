@@ -1,0 +1,173 @@
+@import "./variables.scss";
+@import "./element-init.scss";
+
+@tailwind base;
+
+html, body {
+  @apply font-sans antialiased bg-gray-lighter;
+
+  font-size: 14px;
+}
+
+svg {
+  @apply fill-current;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+em {
+  font-style: normal;
+}
+
+@tailwind utilities;
+
+.white-bg {
+  background: $white !important;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* ellipsis */
+.ell {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group-sm {
+  margin-bottom: 10px;
+}
+
+.form-group-xs {
+  margin-bottom: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid theme('colors.blue.default');
+  border-radius: 4px;
+}
+
+.single {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*初始化分页样式*/
+.app-pagination.is-background {
+  .number.active {
+    background: theme('colors.blue.default') !important;
+    color: theme('colors.white') !important
+  }
+
+  .el-pager li:not(.disabled):hover {
+    color: theme('colors.blue.default');
+  }
+
+  .number, .btn-prev, .btn-next {
+    width: auto;
+  }
+}
+
+/* 全局高亮*/
+.root-highlight {
+  em {
+    color: theme('colors.red.default');
+  }
+}
+
+.dqs-btn {
+  @apply inline-flex items-center justify-center bg-blue text-white;
+
+  border-radius: 4px;
+  border: 1px solid theme('colors.blue.default');
+}
+
+.dqs-btn-white {
+  @apply bg-white text-black;
+
+  border-color: theme('colors.gray.light');
+}
+
+/*全屏*/
+html {
+  @apply h-screen;
+}
+
+body {
+  @apply flex;
+  min-height: 100%;
+}
+
+#__nuxt, #__layout, .default-layout, .app-body {
+  @apply flex flex-col;
+
+  flex: 1 0 auto;
+}
+
+.dqs-btn {
+  @apply inline-flex items-center justify-center bg-blue text-white;
+
+  border-radius: 4px;
+  border: 1px solid theme('colors.blue.default');
+}
+
+
+.dqs-btn-white {
+  @apply bg-white text-black;
+
+  border-color: theme('colors.gray.light');
+}
+
+.dqs-btn-err {
+  @apply bg-red;
+
+  border-color: theme('colors.red.default');
+}
+
+/*代码变量 采用等宽字体*/
+.code-font {
+  font-family: Consolas, Monaco, monospace;
+}
+
+input, textarea {
+  border: 1px solid #DCDFE6;
+
+  &:focus {
+    @apply border-blue;
+    outline: none;
+  }
+}
+
+.require-item {
+  .el-form-item__label:before, .form-label:before {
+    content: '*';
+    color: #F56C6C;
+    margin-right: 4px;
+  }
+}

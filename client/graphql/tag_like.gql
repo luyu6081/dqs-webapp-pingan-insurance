@@ -1,0 +1,3 @@
+mutation dqsLikeTag ($input: DqsTagInput!) {
+  data: dqsLikeTag(input: $input)
+}

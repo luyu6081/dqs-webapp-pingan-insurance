@@ -1,0 +1,70 @@
+# 获取质量平台得分
+query dqsPlatformScore ($keyword: String){
+  data: dqsPlatformScore (keyword: $keyword) {
+    id
+    # 元数据 id
+    objectId
+    #name
+    name
+    # 评分时间
+    dateTime
+    # 评分创建时间
+    marking
+    # 得分
+    score
+    # 排名
+    ranking
+    # 对比上次的排名变动
+    changRanking
+    # 错误得分
+    errorScore
+    # 错误率
+    errorRate
+    # 工单得分
+    issueScore
+    # 工单数量
+    issueNumber
+    # 执行检查条数
+    executionNumber
+    # 检查错误数
+    checkErrorNumber
+    # 检查报警数
+    checkAlarmNumber
+    # 质量改进计划
+    changePlan
+    platformScores {
+      id
+      # 元数据 id
+      objectId
+      #name
+      name
+      # 评分时间
+      dateTime
+      # 评分创建时间
+      marking
+      # 得分
+      score
+      # 排名
+      ranking
+      # 对比上次的排名变动
+      changRanking
+      # 错误得分
+      errorScore
+      # 错误率
+      errorRate
+      # 工单得分
+      issueScore
+      # 工单数量
+      issueNumber
+      # 执行检查条数
+      executionNumber
+      # 检查错误数
+      checkErrorNumber
+      # 检查报警数
+      checkAlarmNumber
+      # 质量改进计划
+      changePlan
+    }
+
+  }
+}

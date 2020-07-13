@@ -1,0 +1,14 @@
+# 获取mds表
+query mdsLoadMdsObjectByCondition ($input: MdsLoadMdsObjectConditionInput) {
+ data: mdsLoadMdsObjectByCondition (input: $input) {
+    data {
+      id
+      name
+      mdsColumns{
+        id
+        name
+        desc
+      }
+    }
+ }
+}

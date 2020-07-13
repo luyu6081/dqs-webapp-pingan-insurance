@@ -1,0 +1,19 @@
+# 检查对象
+fragment DqsTarget on DqsTarget {
+  #  所属应用
+  applyId
+  applyName
+  #  所属系统
+  systemId
+  systemName
+  #  数据库
+  databaseId
+  databaseName
+  #  表
+  tableId
+  tableName
+  #  字段 : [ID]
+  columnIds
+  # [String]
+  columns
+}

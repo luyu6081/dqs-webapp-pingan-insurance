@@ -1,0 +1,7 @@
+# 获取模板详情
+#import "./fragment_template.gql"
+query dqsLoadTemplateDetail ($id: ID!) {
+ data: dqsLoadTemplateDetail (id: $id) {
+    ...DqsTemplate
+ }
+}

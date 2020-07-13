@@ -1,0 +1,7 @@
+# 获取系统错误数据统计
+query dqsLoadPlatformErrorData ($id: ID, $date: String) {
+  data: dqsLoadPlatformErrorData (id: $id, date: $date) {
+    dataTime
+    number
+  }
+}

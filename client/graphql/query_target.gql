@@ -1,0 +1,9 @@
+# 获取对象目录
+query mdsLoadCategoriesByCondition ($input: MdsLoadCategoriesConditionInput){
+ data: mdsLoadCategoriesByCondition (input: $input) {
+   id
+   parentId
+   name
+   level
+ }
+}

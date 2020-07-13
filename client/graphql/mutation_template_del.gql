@@ -1,0 +1,7 @@
+# 删除模板
+mutation dqsRemoveTemplate ($id: [ID!]) {
+  data: dqsRemoveTemplate (id: $id) {
+    message
+    type
+  }
+}

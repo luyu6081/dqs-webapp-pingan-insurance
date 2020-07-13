@@ -1,0 +1,43 @@
+query issueList ($input: DqsLoadIssueListInput) {
+  data: dqsLoadIssueList(input: $input) {
+    offset
+    limit
+    total
+    info {
+      # 我的待办
+      todo
+      # 进行中
+      open
+      # 已完成
+      closed
+      # 超时工单
+      overdue
+      # 与我相关
+      related
+      # 全部工单
+      all
+    }
+    data {
+      # UUID
+       id
+      # 标题
+      title
+      # 工单级别
+      urgency
+      # 解决人
+      resolveBy {
+        name
+      }
+      # 周期
+      period
+      # 创建时间
+      createdAt
+       # 创建者
+      createdBy{
+        name
+      }
+      # 发生时间
+      dateTime
+    }
+  }
+}
